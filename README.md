@@ -123,25 +123,3 @@ npx wrangler secret bulk .dev.vars
 | `GET` | `/` | API info and available endpoints |
 | `GET` | `/health` | Health check |
 | `*` | `/v1/*` | Protected API routes |
-
-## Project Structure
-
-```
-mondel-worker/
-├── src/
-│   ├── index.ts          # App entry point & middleware
-│   ├── db/
-│   │   └── client.ts     # Database client setup
-│   ├── middleware/
-│   │   └── db.ts         # Database middleware & Env types
-│   ├── routes/           # API route handlers
-│   └── utils/
-│       └── jwt.ts        # JWT utilities
-├── .dev.vars             # Local environment secrets (git-ignored)
-├── wrangler.jsonc        # Wrangler configuration
-└── package.json
-```
-
-## License
-
-Private
